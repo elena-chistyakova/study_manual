@@ -51,8 +51,11 @@ nav: # Структура сайта
       - Настройка параметров работы сканера: setup/scaner.md
       - Настройка кнопки вызова утилиты на экранной форме МИС: setup/options.md
     - Пользовательский сценарий для приложения Нотсапп: notesupp.md
+    - API документация Swagger: api/api-swagger.md
+    - API документация Redoc: api/api-redoc.md
 
 markdown_extensions: # Расширения markdown
+  - md_in_html # Поддержка markdown внутри html
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
   - footnotes # Поддержка встроенных сносок на страницах
   - attr_list # Использование html-атрибутов и CSS в элементах markdown
@@ -68,4 +71,17 @@ markdown_extensions: # Расширения markdown
   - pymdownx.emoji: # Иконки и эмодзи
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
- 
+
+plugins:
+  - search
+  - glightbox
+  - tags:
+      tags_allowed:
+      - task 
+      - help 
+      - manual
+      - git
+      - pet-project 
+      - markdown
+  - swagger-ui-tag
+  - redoc-tag
