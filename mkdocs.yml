@@ -74,6 +74,12 @@ markdown_extensions: # Расширения markdown
 
 plugins:
   - search
+  - tags:
+      tags_allowed:
+      - help 
+      - manual
   - glightbox
   - swagger-ui-tag
   - redoc-tag
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
