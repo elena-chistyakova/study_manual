@@ -75,13 +75,5 @@ markdown_extensions: # Расширения markdown
 plugins:
   - search
   - glightbox
-  - tags:
-      tags_allowed:
-      - task 
-      - help 
-      - manual
-      - git
-      - pet-project 
-      - markdown
   - swagger-ui-tag
   - redoc-tag
