@@ -132,7 +132,7 @@ end
     participant "Бэк" as b
     database "База данных" as db
     end box
-
+    
     front -> app++: Открыл главный экран
     app -> b++: Запрос\nGET http://notesapp.api/notes
     b -> db++: Запрос списка заметок
