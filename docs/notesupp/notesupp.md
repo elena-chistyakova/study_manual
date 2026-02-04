@@ -112,10 +112,23 @@ end
 ??? "Код диаграммы"
 
     ```
-    actor "Front" as front
+    @startuml
+    skinparam {
+     minClassWidth 50
+     boxPadding 25
+     maxMessageSize 260
+     participantPadding 60
+     sequenceMessageAlignment center
+     responseMessageBelowArrow true
+    }
+    box Пользователи #mistyRose
+    actor "Пользователь" as front
+    end box
     autonumber
+    box Системы #application
     participant "Приложение" as app
-    box "Back" #LightBlue
+    end box
+    box "Другие системы" #mintCream
     participant "Бэк" as b
     database "База данных" as db
     end box
