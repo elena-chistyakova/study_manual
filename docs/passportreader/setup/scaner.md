@@ -4,7 +4,8 @@
 
 Пример содержимого файла настроек *PassportReader.scanner.config*:
 
-```<?xml version="1.0" encoding="utf-8" ?>
+```
+<?xml version="1.0" encoding="utf-8" ?>
 <scan-settings 
 interface-type="None" 
 brightness-control="Manual"
@@ -22,7 +23,8 @@ rotation-angle="Rotation90"
 softrotation-angle="Rotation0"
 source="0"
 template-name="Passport_RU"
-/>```
+/>
+```
 
 Назначение параметров, задаваемых в файле настройки, следующее:
 
@@ -40,7 +42,9 @@ template-name="Passport_RU"
 
 Для удобства настройки непосредственно в файле *PassportReaderService.scanner.config* по каждому параметру есть подробный комментарий с возможными вариантами значений параметра, например: 
 
-```...
+```
+...
 picture-mode-comment="Цветность сканируемого изображения". BlackAndWhite – черно-белое изображение, Grayscale – оттенки серого, Color – цветное изображение."
 picture-mode="GrayScale"
-...```
+...
+```

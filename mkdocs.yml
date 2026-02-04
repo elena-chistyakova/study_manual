@@ -1,8 +1,8 @@
-site_name: Утилита PassportReader. Руководство пользователя # Название сайта
+site_name: Учебный проект # Название сайта
 site_description: Учебный проект, выполненный в рамках курса «Docs as code для ребят постарше» # Описание сайта, добавляется в meta-теги
 theme: # Тема сайта, информация о ее параметрах
   name: material # Название темы
-  logo: images/logo.png # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
+  logo: logo.png # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
   font:
     text: Roboto # Шрифт текста
     code: Roboto Mono # Шрифт для текста кода
@@ -41,18 +41,21 @@ theme: # Тема сайта, информация о ее параметрах
    - search.highlight # Подсветка результатов поиска в тексте страницы
    - content.code.copy # Кнопка копирования в блоке кода
 nav: # Структура сайта
-    - index.md
-    - Назначение утилиты распознавания удостоверений личности: intro.md
-    - Требования к версии МИС: ver.md
-    - Порядок использования утилиты для распознавания документов: use.md
-    - Установка и настройка утилиты распознавания: 
-      - setup/index.md
-      - Порядок установки программных продуктов, входящих в комплект поставки: setup/install.md
-      - Настройка параметров работы сканера: setup/scaner.md
-      - Настройка кнопки вызова утилиты на экранной форме МИС: setup/options.md
-    - Пользовательский сценарий для приложения Нотсапп: notesupp.md
-    - API документация Swagger: api/api-swagger.md
-    - API документация Redoc: api/api-redoc.md
+    - Утилита PassportReader. Руководство пользователя:
+      - passportreader/index.md
+      - Назначение утилиты распознавания удостоверений личности: passportreader/intro.md
+      - Требования к версии МИС: passportreader/ver.md
+      - Порядок использования утилиты для распознавания документов: passportreader/use.md
+      - Установка и настройка утилиты распознавания: 
+        - passportreader/setup/index.md
+        - Порядок установки программных продуктов, входящих в комплект поставки: passportreader/setup/install.md
+        - Настройка параметров работы сканера: passportreader/setup/scaner.md
+        - Настройка кнопки вызова утилиты на экранной форме МИС: passportreader/setup/options.md
+    - Приложение Нотсарр:
+      - notesupp/index.md
+      - API документация Swagger: notesupp/api/api-swagger.md
+      - API документация Redoc: notesupp/api/api-redoc.md
+      - Пользовательский сценарий для приложения Нотсапп: notesupp/notesupp.md
 
 markdown_extensions: # Расширения markdown
   - md_in_html # Поддержка markdown внутри html
