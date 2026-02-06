@@ -77,11 +77,11 @@ markdown_extensions: # Расширения markdown
 
 plugins:
   - search
+  - glightbox
   - tags:
       tags_allowed:
       - help 
       - manual
-  - glightbox
   - swagger-ui-tag
   - redoc-tag
   - plantuml:
