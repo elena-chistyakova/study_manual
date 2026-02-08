@@ -12,5 +12,3 @@ tags:
 * [API документация Swagger](./api/api-swagger.md)
 
 * [Пользовательский сценарий «Редактирование заметки»](./notesupp.md)
-
---8<-- "../index.md:notation-1"
