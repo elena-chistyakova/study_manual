@@ -3,30 +3,32 @@ site_description: Учебный проект, выполненный в рам�
 theme: # Тема сайта, информация о ее параметрах
   name: material # Название темы
   logo: logo.png # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
-  font:
-    text: Roboto # Шрифт текста
-    code: Roboto Mono # Шрифт для текста кода
+  #font:
+  #  text: Roboto # Шрифт текста
+  #  code: Roboto Mono # Шрифт для текста кода
   language: ru # Язык
-  palette: # Настройки светлой и тёмной тем
-    # Настройки светлой темы
-    - scheme: default 
+  palette: # Настройки тем
+   …
+  palette: # Настройки тем
+    - scheme: standart
       toggle:
         icon: material/weather-sunny # Иконка для активации светлой темы
         name: Выключить солнышко # Всплывающий текст-подсказка
-      primary: blue # Основной цвет
-      accent: purple # Акцентный цвет
-      # вы можете использовать любой цвет из списка: 
-      # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
-      # green; light green; lime; yellow; amber; orange; deep orange; brown; 
-      # grey; blue grey; black; white
-
+    # Настройки светлой темы
+#    - scheme: default 
+#      toggle:
+#        icon: material/weather-sunny # Иконка для активации светлой темы
+#        name: Выключить солнышко # Всплывающий текст-подсказка
+#      primary: custom # Основной цвет
+#      accent: blue # Акцентный цвет
     # Настройки тёмной темы
     - scheme: slate
       toggle:
         icon: material/weather-night
         name: Позвать солнышко
-      primary: deep purple
+      primary: custom
       accent: blue
+     
   features: # настройки функциональностей темы
    #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
    - navigation.path # Хлебные крошки
@@ -71,9 +73,15 @@ markdown_extensions: # Расширения markdown
   - pymdownx.superfences # Поддержка вложенных блоков кода
   - pymdownx.snippets # Использование заимствованного контента
   - pymdownx.blocks.html
+  - pymdownx.snippets: # Использование заимствованного контента
+      base_path:
+        - docs
   - pymdownx.emoji: # Иконки и эмодзи
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
@@ -86,3 +94,6 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+
+copyright: |
+  © 2026 All rights reserved by PMT

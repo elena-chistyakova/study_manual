@@ -1,0 +1,42 @@
+/* Настройки светлой схемы */
+
+[data-md-color-scheme="standart"] {
+  --md-primary-fg-color: #856EDD; /*Основной цвет*/
+  --md-accent-fg-color: #3A2490; /*Акцентный цвет*/
+  --md-typeset-a-color: #3A2490; /*Цвет ссылок*/
+  --md-default-bg-color: #e4e1ee; /*Фоновый цвет*/
+  --md-default-fg-color: #353535; /*Основной цвет текста (абзацы, списки, подзаголовки, nav и toc)*/
+  --md-code-bg-color: #eeecf3; /*Цвет фона блока кода*/
+  --md-code-fg-color: #7467A6; /*Цвет текста в блоке кода*/
+  --md-default-fg-color--light: #4e4d4d; /*Цвет h1 и заголовков блоков toc и nav*/
+  --md-footer-bg-color: #856EDD; /*Цвет футера*/
+}
+
+.md-typeset {
+    font-family: 'Tahoma', 'arial';
+    font-weight: 200;
+    font-size: 16px;
+    color: #353535;
+}
+
+.md-content h1, .md-content h2, .md-content h3, .md-content h4 {
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+    color: #271f49;
+}
+
+.md-content h1 {
+    font-size: 24px;
+}
+
+.md-content h2 {
+    font-size: 20px;
+}
+
+.md-content h3 {
+    font-size: 18px;
+}
+
+.md-content h4 {
+    font-size: 18px;
+}
