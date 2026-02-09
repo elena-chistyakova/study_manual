@@ -14,3 +14,5 @@ tags:
 * [Порядок использования утилиты для распознавания документов](passportreader/use.md)
 
 * [Установка и настройка утилиты распознавания](passportreader/setup/index.md)
+
+--8<-- "source:test"

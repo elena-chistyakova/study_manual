@@ -4,24 +4,25 @@ theme: # Тема сайта, информация о ее параметрах
   name: material # Название темы
   logo: logo.png # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
   font:
-    text: Roboto # Шрифт текста
+    text: Times New Roman # Шрифт текста
     code: Roboto Mono # Шрифт для текста кода
   language: ru # Язык  
   palette: # Настройки тем
+    - scheme: standart
     # Настройки светлой темы
-    - scheme: default 
-      toggle:
-        icon: material/weather-sunny # Иконка для активации светлой темы
-        name: Выключить солнышко # Всплывающий текст-подсказка
-      primary: custom # Основной цвет
-      accent: blue # Акцентный цвет
-    # Настройки тёмной темы
-    - scheme: slate
-      toggle:
-       icon: material/weather-night
-       name: Позвать солнышко
-      primary: custom
-      accent: blue
+#    - scheme: default 
+#     toggle:
+#        icon: material/weather-sunny # Иконка для активации светлой темы
+#        name: Выключить солнышко # Всплывающий текст-подсказка
+#     primary: custom # Основной цвет
+#      accent: blue # Акцентный цвет
+#    # Настройки тёмной темы
+#    - scheme: slate
+#      toggle:
+#       icon: material/weather-night
+#       name: Позвать солнышко
+#      primary: custom
+#      accent: blue
      
   features: # настройки функциональностей темы
    #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
@@ -53,6 +54,9 @@ nav: # Структура сайта
       - API документация Redoc: notesupp/api/api-redoc.md
       - Пользовательский сценарий для приложения Нотсапп: notesupp/notesupp.md
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions: # Расширения markdown
   - md_in_html # Поддержка markdown внутри html
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -66,7 +70,9 @@ markdown_extensions: # Расширения markdown
       anchor_linenums: true
   - pymdownx.superfences # Поддержка вложенных блоков кода
   - pymdownx.snippets # Использование заимствованного контента
-  - pymdownx.blocks.html
+  - pymdownx.snippets:  # Использование заимствованного контента
+      base_path:
+        - docs
   - pymdownx.emoji: # Иконки и эмодзи
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -82,6 +88,8 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+      theme:
+        enabled: false
 
 copyright: |
   © 2026 All rights reserved by PMT
