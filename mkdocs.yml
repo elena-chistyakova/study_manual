@@ -38,7 +38,7 @@ theme: # Тема сайта, информация о ее параметрах
    - content.code.copy # Кнопка копирования в блоке кода
 nav: # Структура сайта
     - Утилита PassportReader. Руководство пользователя:
-      - passportreader/index.md
+      - index.md
       - Назначение утилиты распознавания удостоверений личности: passportreader/intro.md
       - Требования к версии МИС: passportreader/ver.md
       - Порядок использования утилиты для распознавания документов: passportreader/use.md
