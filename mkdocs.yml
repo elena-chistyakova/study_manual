@@ -6,11 +6,8 @@ theme: # Тема сайта, информация о ее параметрах
   font:
     text: Roboto # Шрифт текста
     code: Roboto Mono # Шрифт для текста кода
-  language: ru # Язык
+  language: ru # Язык  
   palette: # Настройки тем
-   …
-  palette: # Настройки тем
-#    - scheme: standart
     # Настройки светлой темы
     - scheme: default 
       toggle:
@@ -85,8 +82,6 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
-      theme:
-        enabled: false
 
 copyright: |
   © 2026 All rights reserved by PMT
