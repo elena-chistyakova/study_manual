@@ -15,9 +15,4 @@ tags:
 
 * [Установка и настройка утилиты распознавания](passportreader/setup/index.md)
 
-# --8<-- [start:example]
-
-!!! info "Информация"
-    Текст для переиспользования
-
-# --8<-- [end:example]
+--8<-- "source:test"

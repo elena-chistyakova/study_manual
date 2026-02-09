@@ -69,7 +69,6 @@ markdown_extensions: # Расширения markdown
   - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
       anchor_linenums: true
   - pymdownx.superfences # Поддержка вложенных блоков кода
-  - pymdownx.snippets # Использование заимствованного контента
   - pymdownx.snippets:  # Использование заимствованного контента
       base_path:
         - docs
